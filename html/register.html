@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Register</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      body { font-family: Verdana; font-size: 10px; }
+      form { border: 0.5px solid black; text-align: center; width: 250px; padding-bottom: 20px; }
+    </style>
   </head>
 
   <body>
 
-    <!-- REGISTER FORM -->
-    <form name="register" method="post" enctype="multipart/form-data" action="../php/register.php">
-      <h3>Register</h3>
-      <input required type="text" name="fullname" placeholder="Full name" /><br />
-      <input required type="text" name="username" placeholder="Username" /><br />
-      <input required type="email" name="email" placeholder="Email" /><br />
-      <input required type="password" name="password" placeholder="Password" /><br />
-      <p>Profile Image</p> <input type="file" name="image" id="image" /><br />
-      <input type="submit" name="submit" value="Register" />
+    <!-- INLOGFORMULIER -->
+    <form name="form" method="post" enctype="multipart/form-data" action="../php/register.php">
+      <p>Registreren</p><br />
+      <input required type="text" name="naam" placeholder="Naam" /><br />
+      <input placeholder="e-mail" type="email" name="email" /><br />
+      <input placeholder="wachtwoord" type="password" name="wachtwoord" /><br /><br />
+      <p>Upload je foto:</p><br />
+      <input type="file" name="foto" id="foto" /><br /><br />
+      <input type="submit" name="registreren" value="Registreren" />
+      <a href="login.html">
+        <input type="button" name="annuleren" value="Annuleren" />
+      </a>
     </form>
 
   </body>

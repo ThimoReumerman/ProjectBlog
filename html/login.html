@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      body { font-family: Verdana; font-size: 10px; }
+      form { border: 0.5px solid black; text-align: center; width: 250px; padding-bottom: 20px; }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- INLOGFORMULIER -->
+    <form name="inloggen" method="post" enctype="multipart/form-data" action="../php/login.php">
+      <p>Inloggen</p>
+      <input placeholder="e-mail" type="email" name="email" /><br />
+      <input placeholder="wachtwoord" type="password" name="wachtwoord" /><br /><br />
+      <input type="submit" name="inloggen" value="Inloggen" />
+      <br />Nog geen account?<br />
+      <a href="register.html">
+        <input type="button" name="registreren" value="Registreren" />
+      </a>
+    </form>
+
+  </body>
+</html>
