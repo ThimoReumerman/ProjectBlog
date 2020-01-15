@@ -1,3 +1,4 @@
+<!-- THIMO REUMERMAN 97050932 -->
 <?php
   $email = htmlspecialchars($_POST["email"]);
   $wachtwoord = htmlspecialchars($_POST["wachtwoord"]);
@@ -12,6 +13,7 @@
     $account = explode("*", $account);
 
     if($account[1] == $email && $account[2] == $wachtwoord) {
+      //Log user in en maak sessie
       session_start();
       $_SESSION["USER"] = $email;
       $_SESSION["USERNAME"] = $account[0];

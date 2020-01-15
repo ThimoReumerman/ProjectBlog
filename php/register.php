@@ -1,9 +1,12 @@
+<!-- THIMO REUMERMAN 97050932 -->
 <?php
   if (isset($_POST["registreren"])) {
+    //Maak foto variable
     $fotoNaam = basename($_FILES["foto"]["name"]);
     global $uploadsMap;
 
     function upload() {
+      //Zet uploads map
       global $uploadsMap;
       $uploadsMap = "../uploads/";
       $uploadsMap = $uploadsMap . basename($_FILES["foto"]["name"]);

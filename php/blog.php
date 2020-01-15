@@ -1,3 +1,4 @@
+<!-- THIMO REUMERMAN 97050932 -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +8,12 @@
 
   <body>
     <!-- HEADER -->
-    <header><h1>ROME</h1></header>
+    <header>
+      <h1>ROME</h1>
+
+    </header>
+
+    <a href="uitloggen.php">UITLOGGEN</a>
 
     <!-- FORMULIER -->
 
@@ -22,10 +28,12 @@
 </html>
 
 <?php
+  //Open bestand
   $bestand = fopen("../txt/blogposts.txt", "r");
 
   if($bestand) {
     while (!feof($bestand)) {
+      //Schrijf nieuwe blogpost bovenaan bestand
       $curpost = fgets($bestand);
       $curpost = explode("||", $curpost);
 

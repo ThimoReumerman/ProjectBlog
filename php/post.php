@@ -1,3 +1,4 @@
+<!-- THIMO REUMERMAN 97050932 -->
 <?php
 if(isset($_POST["submit"])) {
   //Pak titel en inhoud
