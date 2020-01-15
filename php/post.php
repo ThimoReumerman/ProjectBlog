@@ -7,9 +7,10 @@ if(isset($_POST["submit"])) {
   //Maak de sessie en pak de username
   session_start();
   $user = $_SESSION["USERNAME"];
+  $photo = $_SESSION["PHOTO"];
 
   //Maak de nieuwe blogpost tekst
-  $nieuw = "$user||$titel||$inhoud\n";
+  $nieuw = "$user||$titel||$inhoud||$photo";
 
   //Zet de nieuwe post aan het begin van het bestand
   $file_data = $nieuw;

@@ -15,6 +15,7 @@
       session_start();
       $_SESSION["USER"] = $email;
       $_SESSION["USERNAME"] = $account[0];
+      $_SESSION["PHOTO"] = $account[3];
       $_SESSION["STATUS"] = 1;
       $_SESSION["ID"] = $_COOKIE["PHPSESSID"];
 

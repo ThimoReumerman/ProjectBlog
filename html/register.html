@@ -2,20 +2,19 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style>
-      body { font-family: Verdana; font-size: 10px; }
-      form { border: 0.5px solid black; text-align: center; width: 250px; padding-bottom: 20px; }
-    </style>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
+    <!-- HEADER -->
+    <header><h1>ROME</h1></header>
 
     <!-- INLOGFORMULIER -->
     <form name="form" method="post" enctype="multipart/form-data" action="../php/register.php">
       <p>Registreren</p><br />
       <input required type="text" name="naam" placeholder="Naam" /><br />
-      <input placeholder="e-mail" type="email" name="email" /><br />
-      <input placeholder="wachtwoord" type="password" name="wachtwoord" /><br /><br />
+      <input placeholder="E-mail" type="email" name="email" /><br />
+      <input placeholder="Wachtwoord" type="password" name="wachtwoord" /><br /><br />
       <p>Upload je foto:</p><br />
       <input type="file" name="foto" id="foto" /><br /><br />
       <input type="submit" name="registreren" value="Registreren" />
